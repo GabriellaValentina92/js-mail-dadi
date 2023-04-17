@@ -2,7 +2,6 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo
 
-let mail = prompt("inserisci la tua mail");
 
 const Jess = 'Jessica_fletcher@cabotcove.com';
 const shield = 'blackwidow@avengers.it';
@@ -14,6 +13,7 @@ const Mulan = 'Hua_Mulan@disney.cn';
 const listMail = [Jess, shield, alice_mail, hogwarts, hobbit_town, Mulan];
 console.log(listMail)
 
+let mail = prompt("inserisci la tua mail");
 let test = 0;
 
 for(let i=0; i<=listMail.lenght; i++) {

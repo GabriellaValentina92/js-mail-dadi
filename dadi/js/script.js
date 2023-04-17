@@ -15,4 +15,18 @@
     // Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 */ 
 
-console.log(Math.floor(Math.random() * (6 - 1 + 1) ) + 1);
+let min = 1
+let max = 6
+
+let player = (Math.floor(Math.random() * (max - min + 1) ) + min);
+console.log (player)
+let pc_player = (Math.floor(Math.random() * (max - min + 1) ) + min);
+console.log (pc_player)
+
+if (player > pc_player) {
+    console.log('il numero più alto è:' + player);
+} else {
+    console.log('il numero più alto è:' + pc_player);
+}
+
+
