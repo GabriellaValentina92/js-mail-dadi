@@ -14,13 +14,18 @@ const Mulan = 'Hua_Mulan@disney.cn';
 const listMail = [Jess, shield, alice_mail, hogwarts, hobbit_town, Mulan];
 console.log(listMail)
 
-const test = 'true'
-const test1 = 'false'
+let test = 0;
 
-for(let i=0; i<listMail.lenght; i++) {
-    if (listMail == test) {
-        alert('Il tuo indirizzo mail è registrato!')
-    } else if (listMail[i] == test1) {
-        alert('Siamo spiacenti, la tua mail non è valida o non è registrata!')
+for(let i=0; i<=listMail.lenght; i++) {
+
+    if (mail == listMail[i]) {
+        test = 1;
     }
+}
+
+
+if (test === 0) {
+    alert('email non autorizzata');
+} else {
+    alert('email autorizzata');
 }
