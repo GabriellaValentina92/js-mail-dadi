@@ -17,7 +17,7 @@ let mail = prompt("inserisci la tua mail");
 
 let Emailtrovata = false;
 
-for( let i = 0; i < listMail.lenght; i++) {
+for( let i = 0; i < listMail.length; i++) {
 
     if (mail == listMail[i]){
         Emailtrovata = true;
@@ -25,7 +25,7 @@ for( let i = 0; i < listMail.lenght; i++) {
 }
 
 if (Emailtrovata) {
-    alert('email non autorizzata');
-} else {
     alert('email autorizzata');
+} else {
+    alert('email non autorizzata');
 }
