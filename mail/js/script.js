@@ -3,28 +3,28 @@
 // stampa un messaggio appropriato sull’esito del controllo
 
 
-const Jess = 'Jessica_fletcher@cabotcove.com';
-const shield = 'blackwidow@avengers.it';
-const alice_mail = 'charlies_angels@alice.it';
-const hogwarts = 'harry.potter@diagonAlley.it';
-const hobbit_town = 'frodo.baggins@lor.com';
-const Mulan = 'Hua_Mulan@disney.cn';
+let Jess = 'Jessica_fletcher@cabotcove.com';
+let shield = 'blackwidow@avengers.it';
+let alice_mail = 'charlies_angels@alice.it';
+let hogwarts = 'harry.potter@diagonAlley.it';
+let hobbit_town = 'frodo.baggins@lor.com';
+let Mulan = 'Hua_Mulan@disney.cn';
 
-const listMail = [Jess, shield, alice_mail, hogwarts, hobbit_town, Mulan];
+let listMail = [Jess, shield, alice_mail, hogwarts, hobbit_town, Mulan];
 console.log(listMail)
 
 let mail = prompt("inserisci la tua mail");
-let test = 0;
 
-for(let i=0; i<=listMail.lenght; i++) {
+let Emailtrovata = false;
 
-    if (mail == listMail[i]) {
-        test = 1;
+for( let i = 0; i < listMail.lenght; i++) {
+
+    if (mail == listMail[i]){
+        Emailtrovata = true;
     }
 }
 
-
-if (test === 0) {
+if (Emailtrovata) {
     alert('email non autorizzata');
 } else {
     alert('email autorizzata');
